@@ -18,8 +18,7 @@ uint64_t nPrime(uint64_t n) {
         ch++;
         if (count == n)
             break;
-        else
-        {
+        else {
             bool isPrime = 1;
             for (uint64_t i = 2; i <= ch-1; i++) {
                 if (ch % i == 0) {
