@@ -18,7 +18,8 @@ uint64_t nPrime(uint64_t n) {
         ch++;
         if (count == n)
             break;
-        else {
+        else
+        {
             bool isPrime = 1;
             for (uint64_t i = 2; i <= ch-1; i++) {
                 if (ch % i == 0) {
@@ -35,13 +36,12 @@ uint64_t nPrime(uint64_t n) {
     return otvet;
 }
 
-uint64_t nextPrime(uint64_t value)
-{
+uint64_t nextPrime(uint64_t value) {
     int isPrime;
     while (1) {
         value++;
         isPrime = 1;
-        for (int i=2;i<value;i++)
+        for (int i=2; i < value; i++)
             if (value % i == 0) {
                 isPrime = 0;
                 break;
@@ -52,8 +52,7 @@ uint64_t nextPrime(uint64_t value)
     return value;
 }
 
-uint64_t sumPrime(uint64_t hbound)
-{
+uint64_t sumPrime(uint64_t hbound) {
     uint64_t summ = 0;
     for (uint64_t ch=2; ch < hbound; ch++) {
         bool isPrime = 1;
